@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "InsightClub.Db.Migrator", "InsightClub.Db.Migrator\InsightClub.Db.Migrator.fsproj", "{6FC4C247-8A4F-483A-8037-28BF5D8BB9CE}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "InsightClub.Db.Migrator", "InsightClub.Db.Migrator\InsightClub.Db.Migrator.fsproj", "{6FC4C247-8A4F-483A-8037-28BF5D8BB9CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{747D9349-38DA-476E-A90D-8A8506EB52E2}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
