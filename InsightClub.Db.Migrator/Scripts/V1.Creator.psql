@@ -1,0 +1,5 @@
+CREATE TABLE creators (
+  creator_id SERIAL PRIMARY KEY,
+  telegram_id BIGINT NOT NULL UNIQUE,
+  telegram_state JSON NOT NULL
+);
