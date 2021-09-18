@@ -8,11 +8,14 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Scripts\V1.Creator.psql" />
+    <EmbeddedResource Include="Scripts\V2.TelegramBotState.psql" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Include="Program.fs" />
   </ItemGroup>
+
+  <ItemGroup />
 
   <ItemGroup>
     <PackageReference Include="dbup-postgresql" Version="4.5.0" />
