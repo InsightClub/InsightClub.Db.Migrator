@@ -1,4 +1,4 @@
-module Program
+module InsightClub.Db.Migrator.Program
 
 open DbUp
 open System
