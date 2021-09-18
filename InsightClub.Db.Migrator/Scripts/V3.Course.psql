@@ -1,0 +1,8 @@
+﻿CREATE TABLE courses (
+  course_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  creator_id INT NOT NULL REFERENCES creators ON DELETE CASCADE,
+  course_title TEXT NOT NULL,
+  course_description TEXT NOT NULL,
+  is_draft BOOLEAN NOT NULL DEFAULT FALSE,
+  UNIQUE(creator_id, course_title)
+);
