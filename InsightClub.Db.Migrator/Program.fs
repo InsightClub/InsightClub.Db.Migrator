@@ -20,6 +20,7 @@ let main argv =
     DeployChanges
       .To
       .PostgresqlDatabase(connectionString)
+      .WithTransactionPerScript()
       .WithScriptsEmbeddedInAssembly(
         Assembly.GetExecutingAssembly(),
         fun p -> p.EndsWith ".psql")
