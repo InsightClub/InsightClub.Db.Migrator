@@ -10,6 +10,7 @@
     <EmbeddedResource Include="Scripts\V1.Creator.psql" />
     <EmbeddedResource Include="Scripts\V2.TelegramBotState.psql" />
     <EmbeddedResource Include="Scripts\V3.Course.psql" />
+    <EmbeddedResource Include="Scripts\V4.Block.psql" />
   </ItemGroup>
 
   <ItemGroup>
