@@ -11,6 +11,7 @@
     <EmbeddedResource Include="Scripts\V2.TelegramBotState.psql" />
     <EmbeddedResource Include="Scripts\V3.Course.psql" />
     <EmbeddedResource Include="Scripts\V4.Block.psql" />
+    <EmbeddedResource Include="Scripts\V5.Content.psql" />
   </ItemGroup>
 
   <ItemGroup>

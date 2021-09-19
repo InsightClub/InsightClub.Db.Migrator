@@ -1,0 +1,17 @@
+CREATE TYPE content_type AS ENUM (
+  'text',
+  'photo',
+  'audio',
+  'video',
+  'voice',
+  'video_note',
+  'document'
+);
+
+CREATE TABLE contents (
+  course_id INT NOT NULL REFERENCES courses ON DELETE CASCADE,
+  block_index INT NOT NULL,
+  content_id INT NOT NULL,
+  content_type content_type NOT NULL,
+  content TEXT NOT NULL
+);
