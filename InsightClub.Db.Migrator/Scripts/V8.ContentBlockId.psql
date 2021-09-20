@@ -1,0 +1,5 @@
+﻿ALTER TABLE contents DROP CONSTRAINT contents_course_id_fkey;
+ALTER TABLE contents RENAME COLUMN course_id TO block_id;
+ALTER TABLE contents ADD FOREIGN KEY(block_id) REFERENCES blocks ON DELETE CASCADE;
+ALTER TABLE contents DROP COLUMN block_index;
+ALTER TABLE contents ADD PRIMARY KEY(block_id, content_index);
