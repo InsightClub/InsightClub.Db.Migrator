@@ -15,6 +15,7 @@
     <EmbeddedResource Include="Scripts\V6.ContentIndex.psql" />
     <EmbeddedResource Include="Scripts\V7.BlockId.psql" />
     <EmbeddedResource Include="Scripts\V8.ContentBlockId.psql" />
+    <EmbeddedResource Include="Scripts\V9.CourseDescriptionDefault.psql" />
   </ItemGroup>
 
   <ItemGroup>
