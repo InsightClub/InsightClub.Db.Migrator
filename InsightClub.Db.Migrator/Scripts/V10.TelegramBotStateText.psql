@@ -1,0 +1,1 @@
+﻿ALTER TABLE creators ALTER COLUMN telegram_bot_state TYPE TEXT;
