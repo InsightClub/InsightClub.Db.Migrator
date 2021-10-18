@@ -4,6 +4,7 @@ open DbUp
 open System
 open System.IO
 open System.Reflection
+open System.Collections.Generic
 
 
 [<EntryPoint>]
@@ -16,6 +17,14 @@ let main argv =
 
   let connectionString = File.ReadAllText config
 
+  let comparer =
+    { new IComparer<string> with
+        member _.Compare(s1, s2) =
+          let n1 = Int32.Parse s1.[ 1 .. s1.IndexOf '.' ]
+          let n2 = Int32.Parse s2.[ 1 .. s2.IndexOf '.' ]
+
+          n1 - n2 }
+
   let upgrader =
     DeployChanges
       .To
@@ -24,6 +33,7 @@ let main argv =
       .WithScriptsEmbeddedInAssembly(
         Assembly.GetExecutingAssembly(),
         fun p -> p.EndsWith ".psql")
+      .WithScriptNameComparer(comparer)
       .LogToConsole()
       .Build()
 
