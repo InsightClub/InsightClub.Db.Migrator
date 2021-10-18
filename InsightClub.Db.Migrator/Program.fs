@@ -16,8 +16,10 @@ let main _ =
   let comparer =
     { new IComparer<string> with
         member _.Compare(s1, s2) =
-          let n1 = Int32.Parse s1.[ 1 .. s1.IndexOf '.' - 1 ]
-          let n2 = Int32.Parse s2.[ 1 .. s2.IndexOf '.' - 1 ]
+          let p = "InsightClub.Db.Migrator.Scripts.V".Length;
+
+          let n1 = Int32.Parse s1.[ p .. s1.IndexOf('.', p) - 1  ]
+          let n2 = Int32.Parse s2.[ p .. s2.IndexOf('.', p) - 1  ]
 
           n1 - n2 }
 
