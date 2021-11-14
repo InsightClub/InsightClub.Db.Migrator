@@ -11,8 +11,6 @@
     <RuntimeIdentifier Condition="'$(Configuration)'=='RELEASE'">linux-x64</RuntimeIdentifier>
   </PropertyGroup>
 
-  <ItemGroup />
-
   <ItemGroup>
     <EmbeddedResource Include="Scripts\V1.Creator.psql" />
     <EmbeddedResource Include="Scripts\V2.TelegramBotState.psql" />
@@ -24,6 +22,7 @@
     <EmbeddedResource Include="Scripts\V8.ContentBlockId.psql" />
     <EmbeddedResource Include="Scripts\V9.CourseDescriptionDefault.psql" />
     <EmbeddedResource Include="Scripts\V10.TelegramBotStateText.psql" />
+    <EmbeddedResource Include="Scripts\V11.Customer.psql" />
   </ItemGroup>
 
   <ItemGroup>
