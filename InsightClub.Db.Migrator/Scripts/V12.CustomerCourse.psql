@@ -1,0 +1,5 @@
+CREATE TABLE customer_courses (
+  customer_id INT NOT NULL REFERENCES customers ON DELETE CASCADE,
+  course_id INT NOT NULL REFERENCES courses ON DELETE CASCADE,
+  UNIQUE(customer_id, course_id)
+);

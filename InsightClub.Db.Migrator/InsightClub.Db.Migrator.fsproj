@@ -23,6 +23,7 @@
     <EmbeddedResource Include="Scripts\V9.CourseDescriptionDefault.psql" />
     <EmbeddedResource Include="Scripts\V10.TelegramBotStateText.psql" />
     <EmbeddedResource Include="Scripts\V11.Customer.psql" />
+    <EmbeddedResource Include="Scripts\V12.CustomerCourse.psql" />
   </ItemGroup>
 
   <ItemGroup>
