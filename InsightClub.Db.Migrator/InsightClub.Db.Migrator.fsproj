@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -11,11 +11,7 @@
     <RuntimeIdentifier Condition="'$(Configuration)'=='RELEASE'">linux-x64</RuntimeIdentifier>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Include="config" Condition="'$(Configuration)'=='DEBUG'">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
+  <ItemGroup />
 
   <ItemGroup>
     <EmbeddedResource Include="Scripts\V1.Creator.psql" />
@@ -32,6 +28,9 @@
 
   <ItemGroup>
     <Compile Include="Program.fs" />
+    <None Include="config" Condition="'$(Configuration)'=='DEBUG'">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
