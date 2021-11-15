@@ -1,0 +1,1 @@
+ALTER TABLE customer_courses ADD COLUMN block_id INT REFERENCES blocks ON DELETE SET NULL;
