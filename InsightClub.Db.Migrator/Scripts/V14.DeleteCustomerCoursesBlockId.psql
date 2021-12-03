@@ -1,1 +1,0 @@
-ALTER TABLE customer_courses DROP COLUMN block_id;
