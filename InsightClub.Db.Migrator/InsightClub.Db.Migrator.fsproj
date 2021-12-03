@@ -25,6 +25,7 @@
     <EmbeddedResource Include="Scripts\V11.Customer.psql" />
     <EmbeddedResource Include="Scripts\V12.CustomerCourse.psql" />
     <EmbeddedResource Include="Scripts\V13.CustomerCourseBlockId.psql" />
+    <EmbeddedResource Include="Scripts\V14.DeleteCustomerCoursesBlockId.psql" />
   </ItemGroup>
 
   <ItemGroup>
