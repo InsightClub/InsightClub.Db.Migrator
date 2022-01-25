@@ -1,0 +1,1 @@
+ALTER TABLE customers RENAME COLUMN telegram_state TO telegram_bot_state;

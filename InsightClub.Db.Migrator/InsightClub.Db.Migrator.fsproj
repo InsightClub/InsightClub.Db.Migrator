@@ -26,6 +26,7 @@
     <EmbeddedResource Include="Scripts\V12.CustomerCourse.psql" />
     <EmbeddedResource Include="Scripts\V13.CustomerCourseBlockId.psql" />
     <EmbeddedResource Include="Scripts\V14.CustomerName.psql" />
+    <EmbeddedResource Include="Scripts\V15.TelegramBotState.psql" />
   </ItemGroup>
 
   <ItemGroup>
