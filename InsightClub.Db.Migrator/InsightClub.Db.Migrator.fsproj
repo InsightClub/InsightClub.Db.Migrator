@@ -29,6 +29,7 @@
     <EmbeddedResource Include="Scripts\V15.TelegramBotState.psql" />
     <EmbeddedResource Include="Scripts\V16.CoursePrice.psql" />
     <EmbeddedResource Include="Scripts\V17.CourseIsDraftDefaultTrue.psql" />
+    <EmbeddedResource Include="Scripts\V18.CustomerCoursePermission.psql" />
   </ItemGroup>
 
   <ItemGroup>
