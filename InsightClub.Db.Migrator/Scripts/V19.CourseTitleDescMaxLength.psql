@@ -1,2 +1,7 @@
-ALTER TABLE courses ADD CONSTRAINT CHECK (char_length(course_title) <= 100);
-ALTER TABLE courses ADD CONSTRAINT CHECK (char_length(course_description) <= 1000);
+ALTER TABLE courses
+ADD CONSTRAINT course_course_title_max_length
+CHECK (char_length(course_title) <= 100);
+
+ALTER TABLE courses
+ADD CONSTRAINT course_course_description_max_length
+CHECK (char_length(course_description) <= 1000);
