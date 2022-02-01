@@ -30,6 +30,7 @@
     <EmbeddedResource Include="Scripts\V16.CoursePrice.psql" />
     <EmbeddedResource Include="Scripts\V17.CourseIsDraftDefaultTrue.psql" />
     <EmbeddedResource Include="Scripts\V18.CustomerCoursePermission.psql" />
+    <EmbeddedResource Include="Scripts\V19.CourseTitleDescMaxLength.psql" />
   </ItemGroup>
 
   <ItemGroup>
