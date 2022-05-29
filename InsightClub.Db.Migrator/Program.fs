@@ -9,9 +9,8 @@ open System.Collections.Generic
 
 [<EntryPoint>]
 let main _ =
-  let config = "config"
-
-  let connectionString = File.ReadAllText config
+  let connectionString =
+    Environment.GetEnvironmentVariable "DATABASE_CONNECTION_STRING"
 
   let comparer =
     { new IComparer<string> with

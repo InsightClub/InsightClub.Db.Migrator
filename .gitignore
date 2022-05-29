@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 
 config
+/InsightClub.Db.Migrator/Properties/launchSettings.json
