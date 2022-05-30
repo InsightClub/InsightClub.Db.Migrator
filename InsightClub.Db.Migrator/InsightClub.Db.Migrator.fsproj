@@ -39,7 +39,7 @@
 
   <ItemGroup>
     <PackageReference Include="dbup-postgresql" Version="4.6.3" />
-    <PackageReference Include="Npgsql" Version="6.0.4" />
+    <PackageReference Include="Npgsql.FSharp" Version="4.2.0" />
   </ItemGroup>
 
   <ItemGroup>

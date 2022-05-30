@@ -1,16 +1,21 @@
 module InsightClub.Db.Migrator.Program
 
 open DbUp
+open Npgsql.FSharp
 open System
-open System.IO
-open System.Reflection
 open System.Collections.Generic
+open System.Reflection
 
 
 [<EntryPoint>]
 let main _ =
   let connectionString =
-    Environment.GetEnvironmentVariable "DATABASE_CONNECTION_STRING"
+    Environment.GetEnvironmentVariable "DATABASE_URL"
+    |> Uri
+    |> Sql.fromUriToConfig
+    |> Sql.sslMode SslMode.Require
+    |> Sql.trustServerCertificate true
+    |> Sql.formatConnectionString
 
   let comparer =
     { new IComparer<string> with
@@ -29,7 +34,8 @@ let main _ =
       .WithTransactionPerScript()
       .WithScriptsEmbeddedInAssembly(
         Assembly.GetExecutingAssembly(),
-        fun p -> p.EndsWith ".psql")
+        fun p -> p.EndsWith ".psql"
+      )
       .WithScriptNameComparer(comparer)
       .LogToConsole()
       .Build()
